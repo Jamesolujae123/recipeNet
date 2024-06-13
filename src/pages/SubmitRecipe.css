@@ -1,0 +1,190 @@
+.food-imgr {
+  width: 600px;
+  width: 430px;
+  background-color: orangered;
+  border-radius: 15px;
+  padding-block: 100px;
+  display: flex;
+  justify-content: center;
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-size: 15px;
+  font-style: normal;
+  color: black;
+}
+
+.add-cont {
+  background-color: #fafafa;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  padding-bottom: 50px;
+}
+
+.head {
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-size: 20px;
+  font-style: normal;
+  color: black;
+}
+
+.add-cont::placeholder {
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-size: 10px;
+  font-style: normal;
+  color: black;
+}
+
+.r-name {
+  background-color: wheat;
+  border: none;
+  border-radius: 10px;
+  height: 40px;
+  width: 350px;
+  padding-left: 10px;
+  outline: green;
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-size: 13px;
+  font-style: normal;
+  color: black;
+}
+
+.r-name::placeholder {
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-size: 15px;
+  font-style: normal;
+  color: black;
+}
+
+.ingred {
+  background-color: wheat;
+  border-radius: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 10px;
+  outline: none;
+  width: 600px;
+  height: 280px;
+  border: none;
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-size: 20px;
+  font-style: normal;
+  color: black;
+}
+
+.tpp {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+
+.steps {
+  background-color: wheat;
+  border-radius: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 10px;
+  outline: none;
+  width: 600px;
+  border: none;
+  height: 270px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-size: 20px;
+  font-style: normal;
+  color: black;
+}
+
+.fom {
+  display: flex;
+  gap: 20px;
+  flex-direction: column;
+  padding-left: 80px;
+}
+
+.sb {
+  width: 350px;
+  background-color: rgba(216, 11, 45, 0.781);
+  border: none;
+  border-radius: 10px;
+  padding-block: 15px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-size: 20px;
+  font-style: normal;
+  color: white;
+}
+
+.food-p {
+  height: 500px;
+}
+
+.food-prep {
+  width: 700px;
+  display: flex;
+  gap: 42px;
+}
+
+.tingss {
+  font-family: "Satisfy", cursive;
+  font-weight: 700;
+  font-size: 30px;
+  font-style: normal;
+  color: gray;
+  padding-left: 15px;
+}
+
+.food-n {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+
+.ingr-container {
+  width: 450px;
+  background-color: rgba(216, 11, 45, 0.781);
+  border: none;
+  margin-top: 30px;
+  border-radius: 10px;
+  padding-left: 10px;
+  padding-block: 15px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-size: 20px;
+  font-style: normal;
+  color: white;
+}
+
+.bap {
+  margin-top: 60px;
+}
+
+.til {
+  display: flex;
+  justify-content: center;
+}
+
+.title-contt {
+  display: flex;
+  gap: 20px;
+}
+
+.dd {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-left: 15px;
+}
+
+.tt {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: max-content;
+  width: max-content;
+}

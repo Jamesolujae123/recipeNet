@@ -1,0 +1,242 @@
+.details {
+background-color: #fafafa;
+padding-top: 90px;
+padding-bottom: 250px;
+position: relative;
+}
+
+.d-cont {
+    display: flex;
+    flex-direction: column;
+    width: max-content;
+    margin-left: 190px;
+}
+
+.d-det{
+    background-color: white;
+    box-shadow: 4px 4px rgba(128, 128, 128, 0.349);
+    padding-left: 30px;
+    padding-block: 30px;
+    width: 600px;
+}
+
+.d-content{
+width: 300px;
+
+}
+
+.d-ingre {
+    width: 300px;
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    font-size: 15px;
+    font-style: normal;
+    color: gray;
+}
+
+.d-content {
+    width: 300px;
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    font-size: 15px;
+    font-style: normal;
+    color: gray;
+}
+
+.d-method {
+    width: 300px;
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    font-size: 15px;
+    font-style: normal;
+    color: gray;
+}
+
+.d-name {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    border: 1px gray;
+    border-bottom-style: solid;
+    margin-right: 30px;
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    font-size: 15px;
+    font-style: normal;
+    color: black;
+
+}
+
+.inin {
+    margin-top: 25px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.fixed {
+    position: absolute;
+    right: 225px;
+    top: 90px;
+}
+
+.top-ting {
+    background-color: rgba(216, 11, 45, 0.781);
+    padding-block: 20px;
+    padding-inline: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    border-radius: 20px;
+    box-shadow: 6px 14px rgba(10, 9, 9, 0.075);
+}
+
+.wh {
+    background-color: white;
+    border-radius: 6px;
+    padding-left: 30px;
+    padding-block: 5px;
+    width: 257px;
+}
+
+.sr {
+    padding-block: 10px;
+    background-color: gray;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 4px 4px rgba(10, 9, 9, 0.37);
+}
+
+.wh-s {
+    background-color: white;
+    border-radius: 6px;
+    outline: none;
+    border: none;
+    padding-block: 10px;
+    width: 257px;
+    padding-left: 10px;
+}
+
+.wh-s::placeholder {
+    width: 300px;
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    font-size: 15px;
+    font-style: normal;
+    color: gray;
+    padding-left: 40px;
+    color: black;
+}
+
+.d-stars {
+    font-size: 20px;
+    color: rgb(226, 226, 6);
+}
+
+.wrapper {
+    overflow: hidden;
+}
+
+.meat {
+    transition: 1.7s ease;
+}
+
+.meat:hover {
+    transform: scale(1.4);
+}
+
+
+.catege {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 30px;
+}
+
+.cataeg-1 {
+    display: flex;
+    gap: 15px;
+}
+
+.cataeg-img {
+    width: 140px;
+    height: 150px;
+    object-fit: cover;
+    transition: 2s ease;
+    overflow: hidden;
+}
+
+.cataeg-img:hover {
+    transform: scale(1.3);
+}
+
+.categ-pi {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(216, 11, 45, 0.781);
+    padding-block: 7px;
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    font-size: 15px;
+    font-style: normal;
+    color: white;
+    
+}
+
+.side-img {
+
+    overflow: hidden;
+}
+
+.insta {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin-top: 30px;
+    background-color: white;
+    padding-inline: 15px;
+    padding-block: 20px;
+    border-radius: 10px;
+}
+
+.inta-c {
+    display: flex;
+    gap: 20px;
+}
+
+.int {
+    width: 120px;
+    height: 130px;
+    object-fit: cover;
+    border-radius: 7px;
+    filter: brightness(75%);
+}
+
+.inst {
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    font-size: 25px;
+    font-style: normal;   
+    color:  black;
+    margin-inline: 9px;
+    border: 1px gray;
+    padding-bottom: 15px;
+    border-bottom-style: solid;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.inst-pic {
+    color: rgba(216, 11, 45, 0.781);
+}
+
+.blog-r {
+    margin-top: 70px;
+    width: 600px;
+    padding-inline: 25px;
+    padding-block: 30px;
+    border-radius: 15px;
+    background-color: white;
+}
