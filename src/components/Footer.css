@@ -110,3 +110,10 @@
   border: 2px orangered;
   border-bottom-style: solid;
 }
+
+@meadia screen and (max-width:600px) {
+.by {
+font-size: 7px;
+}
+}
+@meadi
