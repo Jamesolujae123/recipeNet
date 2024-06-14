@@ -41,7 +41,7 @@ const Prime = () => {
   };
 
   return (
-    <div>
+    <div className="req">
       <div className="intro">
         <div>
           <span className="acc">Get access to</span>
