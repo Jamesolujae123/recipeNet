@@ -97,7 +97,6 @@
 
 .conti {
   display: flex;
-  padding-top: 15px;
   align-items: baseline;
   gap: 13px;
   justify-content: baseline;
