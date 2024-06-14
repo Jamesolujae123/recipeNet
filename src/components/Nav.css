@@ -123,4 +123,9 @@
   .dropdown:hover {
     color: orange;
   }
+  
+  .desc {
+    display: none;
+  }
+
 }
