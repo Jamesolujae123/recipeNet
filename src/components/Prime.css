@@ -371,6 +371,13 @@
   .food {
   margin-left: 0px;
   }
+
+  .food-d {
+    width: 100px;
+  }
+  .spatula {
+    font-size: 15px;
+  }
 }
 
 @media screen and (min-width: 610px) {
