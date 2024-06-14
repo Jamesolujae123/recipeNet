@@ -319,7 +319,8 @@
 
 @media screen and (max-width: 600px) {
   .acc {
-    font-size: 20px;
+    font-size: 25px;
+    line-height: 30px;
   }
 
   .info {
@@ -344,11 +345,15 @@
     margin-top: 60px;
   }
   .f-g-highlight {
-    font-size: 20px;
+    font-size: 25px;
   }
 
   .f-g-cont {
     font-size: 15px;
+  }
+
+  .f-genre {
+    font-size: 22px;
   }
 
   .slidding-div {
@@ -369,7 +374,7 @@
   }
 
   .food {
-  margin-left: 0px;
+    margin-left: 0px;
   }
 
   .food-d {
