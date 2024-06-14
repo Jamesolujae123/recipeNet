@@ -23,6 +23,7 @@ const AddRecipe = () => {
 
   const handleImg = (e) => {
     console.log(e.target.files);
+    console.log(e);
     setImg(e.target.files[0]);
   };
 
@@ -76,38 +77,49 @@ const AddRecipe = () => {
             <label className="tingss" htmlFor="">
               Description
             </label>
-            <input onChange={handleD} className="r-name" type="text" />
+            <textarea
+              cols="30"
+              rows="5"
+              onChange={handleD}
+              className="d-name"
+              type="text"
+            ></textarea>
           </div>
         </div>
 
         <div className="tpp">
           <div className="food-n">
-            <p className="tingss">Ingredients</p>
-            <CKEditor
-              className=""
-              editor={ClassicEditor}
-              onChange={(e, editor) => {
-                handleI(e, editor);
-              }}
-            />
-          </div>
-          <div>
-            <div className="ingr-container">{ReactHtmlParser(ingr)}</div>
+            <div className="op">
+              <p className="tingss">Ingredients</p>
+              <CKEditor
+                className=""
+                editor={ClassicEditor}
+                onChange={(e, editor) => {
+                  handleI(e, editor);
+                }}
+              />
+            </div>
+            <div className="">
+              <div className="ingr-container">{ReactHtmlParser(ingr)}</div>
+            </div>
           </div>
         </div>
+
         <div className="food-prep">
-          <div>
-            <p className="tingss">Preparation</p>
-            <CKEditor
-              editor={ClassicEditor}
-              onChange={(e, editor) => {
-                handleP(e, editor);
-              }}
-            />
-          </div>
-          <div>
-            <div className="bap">
-              <div className="ingr-container">{ReactHtmlParser(steps)}</div>
+          <div className="pp-cc">
+            <div>
+              <p className="tingss">Preparation</p>
+              <CKEditor
+                editor={ClassicEditor}
+                onChange={(e, editor) => {
+                  handleP(e, editor);
+                }}
+              />
+            </div>
+            <div>
+              <div className="bap">
+                <div className="ingr-container">{ReactHtmlParser(steps)}</div>
+              </div>
             </div>
           </div>
         </div>
