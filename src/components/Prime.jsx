@@ -64,12 +64,12 @@ const Prime = () => {
           </div>
           <div className="info-n">
             {" "}
-            <p className="f-genre">Baked delicacies</p>
+            <p className="f-genre">Baked Delicacies</p>
             <p className="f-g-cont">Lorem ipsum dolor, sit amet consectetur</p>
           </div>
           <div className="info-n">
             {" "}
-            <p className="f-genre">Steamed food</p>
+            <p className="f-genre">Steamed Food</p>
             <p className="f-g-cont">Lorem ipsum dolor, sit amet consectetur</p>
           </div>
         </div>
