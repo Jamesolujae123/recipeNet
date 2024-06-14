@@ -367,6 +367,10 @@
   .first {
     margin-left: 25px;
   }
+
+  .food {
+  margin-left: 0px;
+  }
 }
 
 @media screen and (min-width: 610px) {
