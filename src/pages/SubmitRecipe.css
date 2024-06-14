@@ -157,7 +157,6 @@
 
 .food-n {
   display: flex;
-  flex-direction: column;
   gap: 25px;
 }
 
@@ -203,6 +202,11 @@
   width: max-content;
 }
 
+.pp-cc {
+  display: flex;
+  gap: 25px;
+}
+
 @media screen and (max-width: 600px) {
   .title-contt {
     flex-direction: column;
@@ -215,7 +219,6 @@
 
   .fom {
     padding-left: 25px;
-
   }
 
   .ing-cc {
@@ -232,21 +235,25 @@
 
   .ck.ck-editor__top .ck-sticky-panel .ck-sticky-panel__content .ck-menu-bar,
   .ck.ck-editor__top .ck-sticky-panel .ck-sticky-panel__content .ck-toolbar {
-    width: 400px;
+    width: 350px;
   }
   .ck-rounded-corners .ck.ck-editor__main > .ck-editor__editable,
   .ck.ck-editor__main > .ck-editor__editable.ck-rounded-corners {
-    width: 400px;
+    width: 350px;
   }
   .ck.ck-editor__top .ck-sticky-panel .ck-sticky-panel__content {
-    width: 400px;
+    width: 350px;
   }
 
   .ingr-container {
-    width: 400px;
+    width: 350px;
   }
 
   .add-cont {
     overflow-x: hidden;
+  }
+
+  .food-n {
+    flex-direction: column;
   }
 }
