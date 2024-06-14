@@ -357,9 +357,15 @@
 
   .sec {
     flex-direction: column;
+    padding-left: 0px;
+    margin-left: 25px;
   }
   .text {
     width: 250px;
+  }
+
+  .first {
+    margin-left: 25px;
   }
 }
 
