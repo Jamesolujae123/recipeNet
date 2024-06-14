@@ -1,6 +1,7 @@
 import React from 'react'
 import Prime from '../components/Prime'
 import Prim from '../components/Prim'
+import "./Home.css"
 
 const Home = () => {
   return (
