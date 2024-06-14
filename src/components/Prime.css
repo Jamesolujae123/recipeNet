@@ -383,6 +383,14 @@
   .spatula {
     font-size: 15px;
   }
+
+  .rated {
+    font-size: 25px
+  }
+  .day {
+    font-size: 25px
+  }
+  
 }
 
 @media screen and (min-width: 610px) {
