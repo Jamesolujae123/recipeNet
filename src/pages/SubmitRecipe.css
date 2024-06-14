@@ -244,6 +244,11 @@
     width: 290px;
   }
 
+  .sb {
+    width: 290px;
+
+  }
+
   .ck.ck-editor__top .ck-sticky-panel .ck-sticky-panel__content .ck-menu-bar,
   .ck.ck-editor__top .ck-sticky-panel .ck-sticky-panel__content .ck-toolbar {
     width: 290px;
