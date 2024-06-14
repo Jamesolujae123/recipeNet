@@ -324,3 +324,9 @@ top: 500px;
 .img-c {
     overflow: hidden;
 }
+
+@media screen and (max-width: 600px) {
+  .acc {
+    font-size: 20px;
+  }
+}
