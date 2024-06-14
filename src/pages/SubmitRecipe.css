@@ -213,7 +213,8 @@
   }
   .food-imgr {
     flex-direction: column;
-    width: 360px;
+    height: 300px;
+    width: 290px;
     align-items: center;
   }
 
