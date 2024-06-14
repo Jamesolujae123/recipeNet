@@ -1,98 +1,126 @@
 .nav-cont {
-    display: flex;
-    flex-direction: column;
-    gap: 5px;
-    padding-inline: 80px;
-
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  padding-inline: 80px;
 }
 .navv-cont {
-    display: flex;
-    justify-content: space-between;
-border: 1px gray;
-border-bottom-style: solid;
+  display: flex;
+  justify-content: space-between;
+  border: 1px gray;
+  border-bottom-style: solid;
 }
 
 .Navi-cont {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    justify-content: baseline;
-    border: 1px gray;
-    border-bottom-style: solid;
-    padding-block: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  justify-content: baseline;
+  border: 1px gray;
+  border-bottom-style: solid;
+  padding-block: 20px;
 }
 
 .left-cont {
- display: flex;
- gap: 20px;
-
+  display: flex;
+  gap: 20px;
 }
 
 .Nav-links {
-    display: flex;
-    gap: 20px;
-
+  display: flex;
+  gap: 20px;
 }
 
 .Title {
-    font-family: "Satisfy", cursive;
+  font-family: "Satisfy", cursive;
   font-weight: 700;
   font-size: 30px;
   font-style: normal;
   color: gray;
-
 }
 
 .desc {
-    font-family: "Roboto", sans-serif;
+  font-family: "Roboto", sans-serif;
   font-weight: 500;
   font-style: normal;
-
 }
 
 .link {
-    color: black;
-    text-decoration: none;
-    font-family: "Roboto", sans-serif;
+  color: black;
+  text-decoration: none;
+  font-family: "Roboto", sans-serif;
   font-weight: 500;
   font-style: normal;
 }
 
 .link:hover {
-    color: brown;
+  color: brown;
 }
 
 .top-ting {
-    font-family: "Roboto", sans-serif;
-    font-weight: 500;
-    font-style: normal;
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-style: normal;
 }
 
 .link-signin {
-    color: black;
-    text-decoration: none;
-    font-family: "Roboto", sans-serif;
+  color: black;
+  text-decoration: none;
+  font-family: "Roboto", sans-serif;
   font-weight: 500;
   font-style: normal;
   margin-left: 20px;
 }
 
 .right-cont {
-    display: flex;
-    gap: 20px;
-    justify-content: baseline;
+  display: flex;
+  gap: 20px;
+  justify-content: baseline;
 }
 
-
 .brand {
-    width: 50px;
-    object-fit: cover;
-    object-position: left;
+  width: 50px;
+  object-fit: cover;
+  object-position: left;
 }
 
 .brand-d {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.dropdown {
+  color: black;
+  font-size: 22px;
+}
+
+.conti {
+  display: flex;
+  padding-top: 15px;
+  align-items: baseline;
+  gap: 13px;
+  justify-content: baseline;
+}
+
+@media screen and (max-width: 600px) {
+  .Nav-links {
+    display: none;
+  }
+  .nav-cont {
+    padding-inline: 10px;
+  }
+
+  .brand {
+    display: none;
+  }
+
+  .dropdown {
+    color: black;
+    font-size: 22px;
+  }
+
+  .dropdown:hover {
+    color: orange;
+  }
 }
