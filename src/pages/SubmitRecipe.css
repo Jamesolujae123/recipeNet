@@ -231,23 +231,23 @@
   }
 
   .op {
-    width: 300px;
+    width: 290px;
   }
 
   .ck.ck-editor__top .ck-sticky-panel .ck-sticky-panel__content .ck-menu-bar,
   .ck.ck-editor__top .ck-sticky-panel .ck-sticky-panel__content .ck-toolbar {
-    width: 350px;
+    width: 290px;
   }
   .ck-rounded-corners .ck.ck-editor__main > .ck-editor__editable,
   .ck.ck-editor__main > .ck-editor__editable.ck-rounded-corners {
-    width: 350px;
+    width: 290px;
   }
   .ck.ck-editor__top .ck-sticky-panel .ck-sticky-panel__content {
-    width: 350px;
+    width: 290px;
   }
 
   .ingr-container {
-    width: 350px;
+    width: 290px;
   }
 
   .add-cont {
