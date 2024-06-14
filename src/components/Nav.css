@@ -45,7 +45,7 @@
   font-style: normal;
 }
 
-.link {
+.bro {
   color: black;
   text-decoration: none;
   font-family: "Roboto", sans-serif;
@@ -53,8 +53,30 @@
   font-style: normal;
 }
 
-.link:hover {
+.bro:hover {
   color: brown;
+}
+
+.bro-1 {
+  color: black;
+  text-decoration: none;
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.bro-1:hover {
+  color: brown;
+}
+
+.Nav-links .bro:hover::after {
+  content: "";
+  width: 30%;
+  height: 2px;
+  background: brown;
+  position: absolute;
+  bottom: -4px;
+  left: 20px;
 }
 
 .top-ting {
@@ -104,11 +126,14 @@
 }
 
 @media screen and (max-width: 600px) {
-  .Nav-links {
-    display: none;
-  }
   .nav-cont {
-    padding-inline: 10px;
+    padding-inline: 5px;
+  }
+
+  .x {
+    text-decoration: none;
+    color: black;
+    font-size: 27px;
   }
 
   .desc {
@@ -126,11 +151,51 @@
 
   .dddd {
     display: flex;
+    /* gap: 10px; */
     justify-content: center;
     align-items: center;
   }
 
+  .Nav-links {
+    display: none;
+  }
+
   .dropdown:hover {
     color: orange;
+  }
+
+  .Nav-links-mobile {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    position: fixed;
+    top: 83px;
+    width: 220px;
+    height: 100vh;
+    right: 0;
+    gap: 16px;
+    z-index: 1;
+    background-color: orangered;
+    padding-top: 20px;
+    padding-left: 20px;
+  }
+  #topnav {
+    position: relative;
+    right: -300px;
+  }
+
+  .bro {
+    color: white;
+  }
+
+  .bro:hover {
+    color: black;
+  }
+}
+
+@media screen and (min-width: 603px) {
+  .dddd {
+    display: none;
   }
 }
