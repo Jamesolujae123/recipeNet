@@ -19,6 +19,7 @@ const Nav = () => {
    
    const close = () => {
    setIsMobile(false)
+   setIsCLicked(false);
 }
 
   const unclicked = () => {
