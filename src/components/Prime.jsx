@@ -43,8 +43,8 @@ const Prime = () => {
   const hiddenElments = document.querySelectorAll(#hidden)
 
   const observer = new IntersectionObserver ((entries) => {
-    entries.forEach((entry) => {if (entry.isIntersecting) {enry.target.classlist.add('show')}
-                               else {entry.target.classlist.remove('show')}});
+    entries.forEach((entry) => {if (entry.isIntersecting) {enry.target.id.add('show')}
+                               else {entry.target.id.remove('show')}});
   })
   hiddenElements.forEach((el)=> observer.obeserve(el));
   
