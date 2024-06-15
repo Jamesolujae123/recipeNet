@@ -40,6 +40,14 @@ const Prime = () => {
     navigateTo(`/recipe-d/3`);
   };
 
+  const hiddenElments = document.querySelectorAll(#hidden)
+
+  const observer = new IntersectionObserver ((entries) => {
+    entries.forEach((entry) => {if (entry.isIntersecting) {enry.target.classlist.add('show')}
+                               else {entry.target.classlist.remove('show')}});
+  })
+  hiddenElements.forEach((el)=> observer.obeserve(el));
+  
   return (
     <div className="req">
       <div className="intro">
@@ -57,7 +65,7 @@ const Prime = () => {
           </span>
         </div>
 
-        <div className="info">
+        <div id="hidden" className="info">
           <div className="info-highlighted">
             <p className="f-g-highlight">Fried Food</p>
             <p className="f-g-cont">Lorem ipsum dolor, sit amet consectetur</p>
@@ -75,7 +83,7 @@ const Prime = () => {
         </div>
       </div>
 
-      <div className="categ">
+      <div id="hidden" className="categ">
         <div className="cate">
           <div className="img-c">
             <img className="cate-pic-fish" src={fish} alt="" />
@@ -167,8 +175,8 @@ const Prime = () => {
         </div>
       </div>
 
-      <div className="slidding-div">
-        <div className="cont">
+      <div  className="slidding-div">
+        <div id="hidden" className="cont">
           <div className="first">
             <div>
               <span className="rated">Top Rated Recipes</span>
