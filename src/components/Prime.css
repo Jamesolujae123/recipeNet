@@ -330,6 +330,9 @@
 
   .intro { 
     background-image: url("../assets/Backg2.jpeg");
+    background-size: cover;
+    background-position: center center;
+    transform: translate3D(0,0 -1px);
   }
 
   .acc-d {
