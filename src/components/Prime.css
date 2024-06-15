@@ -31,6 +31,13 @@
   color: gray;
 }
 
+#hidden {
+  opacity: 0;
+  transition: all 1s;
+}
+
+#show {opacity: 1;}
+
 .day {
   font-family: "Satisfy", cursive;
   font-weight: 700;
