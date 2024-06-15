@@ -16,6 +16,10 @@ const Nav = () => {
     setIsCLicked(true);
     setIsMobile(true);
   };
+   
+   const close = () => {
+   setIsMobile(false)
+}
 
   const unclicked = () => {
     setIsMobile(false);
@@ -37,22 +41,22 @@ const Nav = () => {
           </div>
         </div>
         <div className={isMobile ? "Nav-links-mobile" : "Nav-links"}>
-          <Link className="bro" to={"/"}>
+          <Link onClick={close} className="bro" to={"/"}>
             Home
           </Link>
-          <Link className="bro" to={"/Recent"}>
+          <Link onClick={close} className="bro" to={"/Recent"}>
             Recent recipe
           </Link>
-          <Link className="bro" to={"/AddRecipe"}>
+          <Link onClick={close} className="bro" to={"/AddRecipe"}>
             Add recipe
           </Link>
-          <Link className="bro" to={"/Blog"}>
+          <Link onClick={close} className="bro" to={"/Blog"}>
             Blog
           </Link>
-          <Link className="bro" to={"/ContactUs"}>
+          <Link onClick={close} className="bro" to={"/ContactUs"}>
             Contact Us
           </Link>
-          <Link className="bro" to={"/AboutUs"}>
+          <Link onClick={close} className="bro" to={"/AboutUs"}>
             About
           </Link>
         </div>
