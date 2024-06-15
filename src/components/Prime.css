@@ -328,6 +328,10 @@
     gap: 30px;
   }
 
+  .intro { 
+    background-image: url("../assets/Backg2.jpeg");
+  }
+
   .acc-d {
     display: none;
   }
