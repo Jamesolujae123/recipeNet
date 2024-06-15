@@ -157,6 +157,7 @@
   }
 
   .Nav-links {
+  transition: 2s ease;
     display: none;
   }
 
