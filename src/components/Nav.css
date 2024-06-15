@@ -157,7 +157,6 @@
   }
 
   .Nav-links {
-  transition: 2s ease;
     display: none;
   }
 
@@ -180,7 +179,6 @@
     background-color: orangered;
     padding-top: 20px;
     padding-left: 20px;
-    transition: 2s ease;
   }
   #topnav {
     position: relative;
