@@ -87,7 +87,7 @@ const SignUp = () => {
         <h2 className="headd">Create An Account</h2>
         <div className="form-inputs">
         <div className="vviv">
-            <label>Firtname</label>
+            <label>Firstname</label>
             <input
               type="text"
               name="firstname"
