@@ -46,7 +46,7 @@ const Prime = () => {
 
     AOS.init({
       offset: 200,
-      duration: 600,
+      duration: 1000,
       easing: "ease-in-sine",
       startEvent: "load",
     });
