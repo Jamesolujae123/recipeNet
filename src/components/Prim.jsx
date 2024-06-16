@@ -64,7 +64,7 @@ const Prim = ({ heading }) => {
               Sliding recipes are much more tasty as food than sliding images :D
             </p>
           </div>
-          <div className="sec" data-aos="fade-right">
+          <div className="sec" data-aos="fade-right"  data-aos-once="true">
             {foods.map((food) => (
               <div onClick={handleCLick} key={food} className="food">
                 <div className="food-d">
