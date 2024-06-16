@@ -259,13 +259,13 @@
   }
 
   .meat {
-    width: 358px;
+    width: 360px;
   }
 
   
 
   .d-det {
-    width: 358px;
+    width: 360px;
     padding-top: 0px;
     border-top-right-radius: 20px;
     border-top-left-radius: 20px;
@@ -297,7 +297,7 @@
   }
 
   .blog-r {
-    width: 325px;
+    width: 360px;
   }
 
   .hd-text {
@@ -330,7 +330,7 @@
 
   .bars {
     border: 3px solid gray;
-    width: 150px;
+    width: 220px;
     margin-top: 15px;
     border-radius: 10px;
     margin-left: 48px;
