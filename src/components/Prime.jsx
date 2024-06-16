@@ -67,7 +67,7 @@ const Prime = () => {
           </span>
         </div>
 
-        <div id="hidden" className="info" data-aos="fade-right">
+        <div className="info" data-aos="fade-right">
           <div className="info-highlighted">
             <p className="f-g-highlight">Fried Food</p>
             <p className="f-g-cont">Lorem ipsum dolor, sit amet consectetur</p>
@@ -85,7 +85,7 @@ const Prime = () => {
         </div>
       </div>
 
-      <div id="hidden" className="categ" data-aos="fade-right">
+      <div className="categ" data-aos="fade-right">
         <div className="cate">
           <div className="img-c">
             <img className="cate-pic-fish" src={fish} alt="" />
@@ -178,7 +178,7 @@ const Prime = () => {
       </div>
 
       <div className="slidding-div" data-aos="fade-right">
-        <div id="hidden" className="cont">
+        <div className="cont">
           <div className="first">
             <div>
               <span className="rated">Top Rated Recipes</span>
