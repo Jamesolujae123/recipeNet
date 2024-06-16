@@ -126,6 +126,7 @@ const Recipe = () => {
         {foodd.map((food) => (
           <div className="d-det" key={food}>
             <div className="ini">
+              <div className="bars"></div>
               <div className="bap-name">
                 <p>{food.name}</p>
                 <span className="d-stars">
@@ -139,15 +140,15 @@ const Recipe = () => {
             </div>
             <div className="inin">
               <div className="d-content">
-                <p>{food.content}</p>
+                <p className="contttt">{food.content}</p>
               </div>
               <div className="d-ingre">
-                <p>Ingredients</p>
-                <p>{food.ingredients}</p>
+                <p className="ig">Ingredients</p>
+                <p className="inggg">{food.ingredients}</p>
               </div>
               <div className="d-method">
-                <p>Preparation</p>
-                <p>{food.method}</p>
+                <p className="pp">Preparation</p>
+                <p className="methhh">{food.method}</p>
               </div>
             </div>
           </div>
