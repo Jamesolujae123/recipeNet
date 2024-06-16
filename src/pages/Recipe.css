@@ -235,3 +235,92 @@
   border-radius: 15px;
   background-color: white;
 }
+
+@media screen and (max-width: 600px) {
+  .fixed {
+    display: none;
+  }
+
+  .details {
+    padding-top: 0px;
+  }
+
+  .meat {
+    width: 295px;
+  }
+
+  .d-cont {
+    margin-left: 20px;
+  }
+
+  .d-det {
+    width: 300px;
+    padding-top: 0px;
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+  }
+
+  .d-content {
+    font-size: 13px;
+    width: 250px;
+  }
+
+  .d-ingre {
+    font-size: 13px;
+    width: 250px;
+  }
+
+  .d-method {
+    font-size: 13px;
+    width: 250px;
+  }
+
+  .ig {
+    margin-bottom: 17px;
+  }
+
+  .pp {
+    margin-bottom: 17px;
+  }
+
+  .blog-r {
+    width: 300px;
+  }
+
+  .hd-text {
+    font-size: 22px;
+  }
+
+  .star {
+    font-size: 22px;
+  }
+
+  .auth {
+    font-size: 17px;
+  }
+
+  .date {
+    font-size: 12px;
+  }
+
+  .d {
+    font-size: 12px;
+  }
+
+  .auth-cont {
+    flex-direction: column;
+  }
+
+  .b-cont {
+    font-size: 13px;
+  }
+
+  .bars {
+    border: 2px solid gray;
+    width: 150px;
+    margin-top: 15px;
+    border-radius: 10px;
+    margin-left: 48px;
+    margin-bottom: 25px;
+  }
+}
