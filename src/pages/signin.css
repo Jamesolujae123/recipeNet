@@ -108,6 +108,7 @@
   background: tomato;
   color: #fff;
   cursor: pointer;
+    align-self: center;
 }
 
 .m:hover {
@@ -167,6 +168,7 @@
   .bacc input {
     width: 240px;
     margin-left: 10px;
+    align-self: center;
   }
 
   .bacc label {
