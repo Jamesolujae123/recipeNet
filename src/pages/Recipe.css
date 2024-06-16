@@ -267,8 +267,8 @@
   .d-det {
     width: 360px;
     padding-top: 0px;
-    border-top-right-radius: 20px;
-    border-top-left-radius: 20px;
+    border-top-right-radius: 30px;
+    border-top-left-radius: 30px;
   }
 
   .d-content {
@@ -333,7 +333,7 @@
     width: 220px;
     margin-top: 15px;
     border-radius: 10px;
-    margin-left: 48px;
+    margin-left: 42px;
     margin-bottom: 25px;
   }
 }
