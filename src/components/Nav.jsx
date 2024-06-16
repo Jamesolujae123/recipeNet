@@ -39,7 +39,8 @@ const Nav = () => {
           <div className="brand-d">
           <Link to={"/"}>  <h2 className="Title">Recipe Net</h2>
             <p className="desc">An Encyclopedia of recipies</p>
-          </div></Link>
+            </Link>
+          </div>
         </div>
         <div className={isMobile ? "Nav-links-mobile" : "Nav-links"}>
           <Link onClick={close} className="bro" to={"/"}>
