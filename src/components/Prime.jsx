@@ -50,6 +50,7 @@ useEffect(() => {
       easing: "ease-in-sine",
       startEvent: "load",
     });
+  }, []);
 
   return (
     <div className="req">
