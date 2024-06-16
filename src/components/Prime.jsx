@@ -177,7 +177,7 @@ const Prime = () => {
         </div>
       </div>
 
-      <div className="slidding-div" data-aos="fade-right">
+      <div className="slidding-div">
         <div className="cont">
           <div className="first">
             <div>
@@ -188,7 +188,7 @@ const Prime = () => {
               Sliding recipes are much more tasty as food than sliding images :D
             </p>
           </div>
-          <div className="sec">
+          <div className="sec" data-aos="fade-right">
             {foods.map((food) => (
               <div onClick={handleCLick} key={food} className="food">
                 <div className="food-d">
