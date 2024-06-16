@@ -52,7 +52,7 @@ const Prime = () => {
 
   return (
     <div className="req">
-      <div className="intro"data-aos="fade-in">
+      <div className="intro"data-aos="fade">
         <div>
           <span className="acc">Get access to</span>
           <p className="acc">
