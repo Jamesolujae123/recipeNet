@@ -1,3 +1,15 @@
+@keyframes fade-up {
+  0% {
+    opacity: 0;
+    transform: translateY(100px) scale(0.9);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0px) scale(1);
+  }
+}
+
 .details {
   background-color: #fafafa;
   padding-top: 90px;
@@ -18,6 +30,7 @@
   padding-left: 30px;
   padding-block: 30px;
   width: 600px;
+  animation: fade-up 1s;
 }
 
 .d-content {
