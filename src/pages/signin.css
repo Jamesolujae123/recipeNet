@@ -145,7 +145,7 @@
   margin-top: 15px;
   font-family: "Roboto", sans-serif;
   font-weight: 500;
-  font-size: 12px;
+  font-size: 16px;
   font-style: normal;
   margin-bottom: 20px;
 }
@@ -161,19 +161,24 @@
 
 @media screen and (max-width: 600px) {
   .wrappert {
-    width: 310px;
+    width: 360px;
   }
 
   .bacc input {
-    width: 240px;
-    margin-left: 12px;
+    width: 250px;
   }
 
   .headd {
     font-size: 25px;
   }
 
-  .bacc label {
-  padding-left: 17px;
+  .icons i {
+    color: #07001f;
+    padding: 10px 10px;
+    border-radius: 10px;
+    margin-left: 0.9rem;
+    font-size: 14px;
+    cursor: pointer;
+    border: 2px solid #dfe9f5;
   }
 }
