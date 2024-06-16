@@ -43,12 +43,13 @@ const Prime = () => {
     navigateTo(`/recipe-d/3`);
   };
 
-  AOS.init({
-    offset: 200,
-    duration: 600,
-    easing: "ease-in-sine",
-    startEvent: "load",
-  });
+useEffect(() => {
+    AOS.init({
+      offset: 200,
+      duration: 600,
+      easing: "ease-in-sine",
+      startEvent: "load",
+    });
 
   return (
     <div className="req">
