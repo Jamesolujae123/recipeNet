@@ -51,8 +51,8 @@ const Prime = () => {
   });
 
   return (
-    <div className="req" data-aos="fade-right">
-      <div className="intro">
+    <div className="req">
+      <div className="intro"data-aos="fade-in">
         <div>
           <span className="acc">Get access to</span>
           <p className="acc">
