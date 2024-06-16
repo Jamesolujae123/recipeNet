@@ -10,6 +10,18 @@
   }
 }
 
+@keyframes fade-left {
+  0% {
+    opacity: 0;
+    transform: translateX(-30px) scale(0.9);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateX(0px) scale(1);
+  }
+}
+
 .nav-cont {
   display: flex;
   flex-direction: column;
@@ -188,6 +200,7 @@
     background-color: orangered;
     padding-top: 20px;
     padding-left: 20px;
+    animation: fade-left 0.9s;
   }
   #topnav {
     position: relative;
