@@ -8,6 +8,7 @@ const SignUp = () => {
   const [formValues, setFormValues] = useState({
     firstname: "",
     lastname: "",
+    Username: "",
     email: "",
     phoneNumber: "",
     password: "",
@@ -55,6 +56,10 @@ const SignUp = () => {
     if (!formValues.lastname || formValues.lastname.length == 0) {
       errors.name = "Name cannot be empty";
     }
+    if (!formValues.Username || formValues.Username.length == 0) {
+      errors.name = "This field cannot be empty";
+    }
+
     if (
       !formValues.phoneNumber ||
       formValues.phoneNumber.length == 0 ||
@@ -82,7 +87,7 @@ const SignUp = () => {
         <h2 className="headd">Create An Account</h2>
         <div className="form-inputs">
         <div className="vviv">
-            <label>Firstname</label>
+            <label>Firtname</label>
             <input
               type="text"
               name="firstname"
@@ -96,6 +101,14 @@ const SignUp = () => {
               type="text"
               name="lastname"
               value={formValues.lastname}
+              onChange={handleChange}
+            />
+            <div className="vviv">
+            <label>Username</label>
+            <input
+              type="text"
+              name="Username"
+              value={formValues.Username}
               onChange={handleChange}
             />
           </div>
@@ -142,8 +155,9 @@ const SignUp = () => {
           </div>
           <button className="m" disabled={pending}>{pending ? "signing up..." : 'Signup'}</button>
         </div>
+        </div>
+</form>
 
-      </form>
 <Toaster/>
       </div>
          </div>
