@@ -176,6 +176,13 @@
   .headd {
     font-size: 25px;
   }
+ .s-bk {
+    background-image: url("../assets/mobilebg.jpg");
+  }
+
+  .skk {
+    background-image: url("../assets/mobilebg.jpg");
+  }
 
   .icons i {
     color: #07001f;
