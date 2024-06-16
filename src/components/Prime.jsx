@@ -10,7 +10,10 @@ import cocktail from "../assets/cocktail.jpg";
 import eggs from "../assets/eggs.jpg";
 import salad from "../assets/salad.jpg";
 import pizza from "../assets/pizza.png";
+import { useState, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 const Prime = () => {
   const navigateTo = useNavigate();
@@ -40,16 +43,15 @@ const Prime = () => {
     navigateTo(`/recipe-d/3`);
   };
 
-  const hiddenElments = document.querySelectorAll(#hidden)
+  AOS.init({
+    offset: 200,
+    duration: 600,
+    easing: "ease-in-sine",
+    startEvent: "load",
+  });
 
-  const observer = new IntersectionObserver ((entries) => {
-    entries.forEach((entry) => {if (entry.isIntersecting) {enry.target.id.add('show')}
-                               else {entry.target.id.remove('show')}});
-  })
-  hiddenElements.forEach((el)=> observer.obeserve(el));
-  
   return (
-    <div className="req">
+    <div className="req" data-aos="fade-right">
       <div className="intro">
         <div>
           <span className="acc">Get access to</span>
@@ -65,7 +67,7 @@ const Prime = () => {
           </span>
         </div>
 
-        <div id="hidden" className="info">
+        <div id="hidden" className="info" data-aos="fade-right">
           <div className="info-highlighted">
             <p className="f-g-highlight">Fried Food</p>
             <p className="f-g-cont">Lorem ipsum dolor, sit amet consectetur</p>
@@ -83,7 +85,7 @@ const Prime = () => {
         </div>
       </div>
 
-      <div id="hidden" className="categ">
+      <div id="hidden" className="categ" data-aos="fade-right">
         <div className="cate">
           <div className="img-c">
             <img className="cate-pic-fish" src={fish} alt="" />
@@ -175,7 +177,7 @@ const Prime = () => {
         </div>
       </div>
 
-      <div  className="slidding-div">
+      <div className="slidding-div" data-aos="fade-right">
         <div id="hidden" className="cont">
           <div className="first">
             <div>
