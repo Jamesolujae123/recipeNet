@@ -18,14 +18,14 @@ import "aos/dist/aos.css";
 const Prim = ({ heading }) => {
   const NavigateTo = useNavigate();
 
-useEffect(() => {
+
     AOS.init({
       offset: 200,
       duration: 600,
       easing: "ease-in-sine",
       startEvent: "load",
     });
-  }, []);
+  
 
   const foods = [
     {
