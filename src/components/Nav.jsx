@@ -37,7 +37,7 @@ const Nav = () => {
           </div>
 
           <div className="brand-d">
-          <Link className="bbs" to={"/"}>  <h2 className="Title">Recipe Net</h2>
+          <Link onClick={close} className="bbs" to={"/"}>  <h2 className="Title">Recipe Net</h2>
             <p className="desc">An Encyclopedia of recipies</p>
             </Link>
           </div>
