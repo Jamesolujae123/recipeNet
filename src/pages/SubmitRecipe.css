@@ -153,7 +153,6 @@
   font-style: normal;
   color: gray;
   padding-left: 15px;
-  margin-bottom: 20px;
 }
 
 .food-n {
@@ -208,29 +207,23 @@
   gap: 25px;
 }
 
+.ck-rounded-corners .ck.ck-editor__main > .ck-editor__editable,
+.ck.ck-editor__main > .ck-editor__editable.ck-rounded-corners {
+  padding-left: 22px;
+}
+
 @media screen and (max-width: 600px) {
   .title-contt {
     flex-direction: column;
   }
   .food-imgr {
     flex-direction: column;
-    height: 300px;
-    width: 290px;
+    width: 360px;
     align-items: center;
   }
 
   .fom {
     padding-left: 25px;
-    gap: 70px;
-  }
-
-  .r-name {
-    width: 290px;
-  }
-
-  .d-name{
-    width: 290px;
-    
   }
 
   .ing-cc {
@@ -242,28 +235,25 @@
   }
 
   .op {
-    width: 290px;
-  }
-
-  .sb {
-    width: 290px;
-
+    width: 300px;
   }
 
   .ck.ck-editor__top .ck-sticky-panel .ck-sticky-panel__content .ck-menu-bar,
   .ck.ck-editor__top .ck-sticky-panel .ck-sticky-panel__content .ck-toolbar {
-    width: 290px;
+    padding-left: 22px;
+    width: 350px;
   }
   .ck-rounded-corners .ck.ck-editor__main > .ck-editor__editable,
   .ck.ck-editor__main > .ck-editor__editable.ck-rounded-corners {
-    width: 290px;
+    padding-left: 22px;
+    width: 350px;
   }
   .ck.ck-editor__top .ck-sticky-panel .ck-sticky-panel__content {
-    width: 290px;
+    width: 350px;
   }
 
   .ingr-container {
-    width: 290px;
+    width: 350px;
   }
 
   .add-cont {
@@ -272,5 +262,8 @@
 
   .food-n {
     flex-direction: column;
+  }
+
+  .acc-3 {
   }
 }
