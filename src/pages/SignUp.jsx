@@ -1,8 +1,14 @@
-import { useState } from "react";
+import { useState,  useContext } from "react";
 import "./signin.css";
-import { useNavigate } from "react-router-dom";
+import { useNavigate} from "react-router-dom";
 import {Toaster, toast } from "sonner";
 import "./signin.css"
+import { AppContext } from "../AppContext";
+import App from "../App";
+import { Welcome } from "../AppContext";
+
+
+
 
 const SignUp = () => {
   const [formValues, setFormValues] = useState({
@@ -15,6 +21,13 @@ const SignUp = () => {
     confirmPassword: "",
   });
   const [pending, setPending] = useState(false);
+
+  const navigateTo = useNavigate();
+
+  const data = useContext(AppContext);
+
+  const welc = useContext(Welcome);
+ 
 
   const handleSubmit = (e) => {
     e.preventDefault();
@@ -29,12 +42,16 @@ const SignUp = () => {
         toast.success("Sign up successful!");
         setPending(false);
       }, 2000);
+    data.setIsLoggedin(true);
+    welc.setWelcome(true)
+      navigateTo("/")
     }
     // If there are errors
     else {
       console.log("Invalid inputs, please try again");
       toast("Invalid inputs, please try again");
       setPending(false);
+
     }
     console.log(formValues);
   };
@@ -87,7 +104,7 @@ const SignUp = () => {
         <h2 className="headd">Create An Account</h2>
         <div className="form-inputs">
         <div className="vviv">
-            <label>Firstname</label>
+            <label>Firtname</label>
             <input
               type="text"
               name="firstname"
