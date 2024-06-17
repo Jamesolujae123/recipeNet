@@ -3,6 +3,8 @@ import "./Prim.css";
 import jollof from "../assets/Jollof.jpg";
 import { useNavigate } from "react-router-dom";
 import "./Prime.css";
+import { FaArrowDown } from "react-icons/fa";
+
 import { TbGrillSpatula } from "react-icons/tb";
 import FishRoll from "../assets/Fishroll.jpg";
 import Meatpie from "../assets/Meatpie.jpg";
@@ -15,17 +17,16 @@ import pizza from "../assets/pizza.png";
 import AOS from "aos";
 import "aos/dist/aos.css";
 
-const Prim = ({ heading }) => {
+const Prim = ({ topting, heading }) => {
   const NavigateTo = useNavigate();
 
-
-    AOS.init({
-      offset: 200,
-      duration: 1000,
-      easing: "ease-in-sine",
-      startEvent: "load",
-    });
-  
+  AOS.init({
+    offset: 200,
+    duration: 600,
+    easing: "ease-in-sine",
+    startEvent: "load",
+    delay: 100,
+  });
 
   const foods = [
     {
@@ -54,44 +55,61 @@ const Prim = ({ heading }) => {
 
   return (
     <div>
+      <div className="hdd-ccont">
+        <p className="hdd-p">{topting}</p>
+      </div>
+
       <div className="divo">
-        <div className="cont">
-          <div className="first">
-            <div>
-              <span className="rated">{heading}</span>
+        <div>
+          <div className="cont">
+            <div className="first">
+              <div>
+                <span className="rated">{heading}</span>
+              </div>
+              <p className="text">
+                Sliding recipes are much more tasty as food than sliding images
+                :D
+              </p>
             </div>
-            <p className="text">
-              Sliding recipes are much more tasty as food than sliding images :D
-            </p>
-          </div>
-          <div className="sec" data-aos="fade-right"  data-aos-once="true">
-            {foods.map((food) => (
-              <div onClick={handleCLick} key={food} className="food">
-                <div className="food-d">
-                  <div className="ting">
-                    <p className="f-name">{food.Name}</p>
-                    <div className="spatu">
-                      {" "}
-                      <span className="spatula">
-                        <TbGrillSpatula />
-                        <TbGrillSpatula />
-                        <TbGrillSpatula />
-                        <TbGrillSpatula />
-                        <TbGrillSpatula className="fade" />
-                      </span>
+            <div className="sec" data-aos="fade-right" data-aos-once="true">
+              {foods.map((food) => (
+                <div onClick={handleCLick} key={food} className="food">
+                  <div className="food-d">
+                    <div className="ting">
+                      <p className="f-name">{food.Name}</p>
+                      <div className="spatu">
+                        {" "}
+                        <span className="spatula">
+                          <TbGrillSpatula />
+                          <TbGrillSpatula />
+                          <TbGrillSpatula />
+                          <TbGrillSpatula />
+                          <TbGrillSpatula className="fade" />
+                        </span>
+                      </div>
+                    </div>
+                    <div className="Auth">
+                      <p className="Author">{food.Author}</p>
                     </div>
                   </div>
-                  <div className="Auth">
-                    <p className="Author">{food.Author}</p>
+
+                  <div className="wrapper">
+                    <img className="food-img" src={food.image} alt="" />
                   </div>
                 </div>
-
-                <div className="wrapper">
-                  <img className="food-img" src={food.image} alt="" />
-                </div>
-              </div>
-            ))}
+              ))}
+            </div>
           </div>
+        </div>
+        <div className="view-more">
+          <span className="vw-cont">
+            view more <FaArrowDown />
+          </span>
+        </div>
+        <div className="view-more-r">
+          <span className="vw-cont">
+            view more <FaArrowDown />
+          </span>
         </div>
       </div>
     </div>
