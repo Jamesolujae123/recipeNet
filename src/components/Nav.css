@@ -168,7 +168,7 @@
 
 @media screen and (max-width: 600px) {
   .nav-cont {
-    padding-inline: 5px;
+    padding-inline: 0px;
   }
 
   .x {
