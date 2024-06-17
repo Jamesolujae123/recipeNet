@@ -234,7 +234,11 @@
   .bro:hover {
     color: black;
   }
+  .conti {
+  margin-right: 5px;
+  }
 }
+
 
 @media screen and (min-width: 603px) {
   .dddd {
