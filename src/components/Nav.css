@@ -64,6 +64,7 @@
   font-family: "Roboto", sans-serif;
   font-weight: 500;
   font-style: normal;
+  color: rgb(228, 151, 8);
 }
 
 .bro {
@@ -157,6 +158,10 @@
   width: 36px;
 }
 
+.homee {
+  text-decoration: none;
+}
+
 .user span {
   color: black;
   text-decoration: none;
@@ -168,7 +173,7 @@
 
 @media screen and (max-width: 600px) {
   .nav-cont {
-    padding-inline: 0px;
+    padding-inline: 5px;
   }
 
   .x {
@@ -234,11 +239,7 @@
   .bro:hover {
     color: black;
   }
-  .conti {
-  margin-right: 10px;
-  }
 }
-
 
 @media screen and (min-width: 603px) {
   .dddd {
