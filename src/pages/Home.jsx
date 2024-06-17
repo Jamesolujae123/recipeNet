@@ -7,7 +7,7 @@ const Home = () => {
   return (
     <div>
         <Prime />
-        <Prim topting={"Recent Recipes"} heading={"Trending"}/>
+        <Prim heading={"Trending"}/>
         
     </div>
   )
