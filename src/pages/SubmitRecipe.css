@@ -235,20 +235,20 @@
   }
 
   .op {
-    width: 300px;
+    width: 301px;
   }
 
   .ck.ck-editor__top .ck-sticky-panel .ck-sticky-panel__content .ck-menu-bar,
   .ck.ck-editor__top .ck-sticky-panel .ck-sticky-panel__content .ck-toolbar {
-    width: 295px;
+    width: 301px;
   }
   .ck-rounded-corners .ck.ck-editor__main > .ck-editor__editable,
   .ck.ck-editor__main > .ck-editor__editable.ck-rounded-corners {
     padding-left: 22px;
-    width: 295px;
+    width: 301px;
   }
   .ck.ck-editor__top .ck-sticky-panel .ck-sticky-panel__content {
-    width: 295px;
+    width: 301px;
   }
 
   .ingr-container {
@@ -260,8 +260,16 @@
     overflow-x: hidden;
   }
 
+  .r-name {width: 301px}
+  .d-name {width: 301px}
+  .tingss {width: 301px}
+  
   .food-n {
     flex-direction: column;
+  }
+
+  .sb {
+  width: 301px;
   }
 
   .acc-3 {
