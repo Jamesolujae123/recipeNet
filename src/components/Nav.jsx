@@ -36,11 +36,13 @@ const Nav = () => {
             {" "}
             <img className="brand" src={logo} alt="b-pic" />{" "}
           </div>
-
-          <div className="brand-d">
-            <h2 className="Title">Recipe Net</h2>
-            <p className="desc">An Encyclopedia of recipies</p>
-          </div>
+          <Link className="homee" to={"/"}>
+            {" "}
+            <div className="brand-d">
+              <h2 className="Title">Recipe Net</h2>
+              <p className="desc">An Encyclopedia of recipies</p>
+            </div>
+          </Link>
         </div>
         <div className={isMobile ? "Nav-links-mobile" : "Nav-links"}>
           <Link className="bro" to={"/"}>
