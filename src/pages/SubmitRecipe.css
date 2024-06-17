@@ -240,7 +240,6 @@
 
   .ck.ck-editor__top .ck-sticky-panel .ck-sticky-panel__content .ck-menu-bar,
   .ck.ck-editor__top .ck-sticky-panel .ck-sticky-panel__content .ck-toolbar {
-    padding-left: 22px;
     width: 350px;
   }
   .ck-rounded-corners .ck.ck-editor__main > .ck-editor__editable,
