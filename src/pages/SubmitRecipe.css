@@ -218,7 +218,7 @@
   }
   .food-imgr {
     flex-direction: column;
-    width: 360px;
+    width: 295px;
     align-items: center;
   }
 
@@ -240,19 +240,20 @@
 
   .ck.ck-editor__top .ck-sticky-panel .ck-sticky-panel__content .ck-menu-bar,
   .ck.ck-editor__top .ck-sticky-panel .ck-sticky-panel__content .ck-toolbar {
-    width: 350px;
+    width: 295px;
   }
   .ck-rounded-corners .ck.ck-editor__main > .ck-editor__editable,
   .ck.ck-editor__main > .ck-editor__editable.ck-rounded-corners {
     padding-left: 22px;
-    width: 350px;
+    width: 295px;
   }
   .ck.ck-editor__top .ck-sticky-panel .ck-sticky-panel__content {
-    width: 350px;
+    width: 295px;
   }
 
   .ingr-container {
-    width: 350px;
+    height: 150px;
+    width: 280px;
   }
 
   .add-cont {
