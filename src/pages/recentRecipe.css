@@ -1,0 +1,14 @@
+.hdd-ccont {
+  padding-block: 20px;
+  display: flex;
+  justify-content: center;
+  background-color: #fafafa;
+}
+
+.hdd-p {
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-size: 40px;
+  font-style: normal;
+  color: black;
+}
