@@ -25,6 +25,11 @@ const Nav = () => {
     setIsCLicked(false);
   };
 
+  const close = () => {
+    setIsMobile(false);
+    setIsCLicked(false);
+  };
+
   const data = useContext(AppContext);
   const welc = useContext(Welcome);
 
@@ -36,7 +41,7 @@ const Nav = () => {
             {" "}
             <img className="brand" src={logo} alt="b-pic" />{" "}
           </div>
-          <Link className="homee" to={"/"}>
+          <Link onClick={close} className="homee" to={"/"}>
             {" "}
             <div className="brand-d">
               <h2 className="Title">Recipe Net</h2>
@@ -45,26 +50,26 @@ const Nav = () => {
           </Link>
         </div>
         <div className={isMobile ? "Nav-links-mobile" : "Nav-links"}>
-          <Link className="bro" to={"/"}>
+          <Link onClick={close} className="bro" to={"/"}>
             Home
           </Link>
-          <Link className="bro" to={"/Recent"}>
+          <Link onClick={close} className="bro" to={"/Recent"}>
             Recent recipe
           </Link>
           {data.isLoggedin ? (
-            <Link className="bro" to={"/AddRecipe"}>
+            <Link onClick={close} className="bro" to={"/AddRecipe"}>
               Add recipe
             </Link>
           ) : (
             ""
           )}
-          <Link className="bro" to={"/Blog"}>
+          <Link onClick={close} className="bro" to={"/Blog"}>
             Blog
           </Link>
-          <Link className="bro" to={"/ContactUs"}>
+          <Link onClick={close} className="bro" to={"/ContactUs"}>
             Contact Us
           </Link>
-          <Link className="bro" to={"/AboutUs"}>
+          <Link onClick={close} className="bro" to={"/AboutUs"}>
             About
           </Link>
         </div>
