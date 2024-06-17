@@ -7,6 +7,9 @@ import "./Nav.css";
 import { IoMdSearch } from "react-icons/io";
 import { GiHamburgerMenu } from "react-icons/gi";
 import { IoCloseSharp } from "react-icons/io5";
+import { useContext } from "react";
+import { AppContext, Welcome } from "../AppContext";
+import prof from "../assets/Ellipse 38.png";
 
 const Nav = () => {
   const [isMobile, setIsMobile] = useState(false);
@@ -16,16 +19,14 @@ const Nav = () => {
     setIsCLicked(true);
     setIsMobile(true);
   };
-   
-   const close = () => {
-   setIsMobile(false)
-   setIsCLicked(false);
-}
 
   const unclicked = () => {
     setIsMobile(false);
     setIsCLicked(false);
   };
+
+  const data = useContext(AppContext);
+  const welc = useContext(Welcome);
 
   return (
     <div className="nav-cont">
@@ -37,39 +38,50 @@ const Nav = () => {
           </div>
 
           <div className="brand-d">
-          <Link onClick={close} className="bbs" to={"/"}>  <h2 className="Title">Recipe Net</h2>
+            <h2 className="Title">Recipe Net</h2>
             <p className="desc">An Encyclopedia of recipies</p>
-            </Link>
           </div>
         </div>
         <div className={isMobile ? "Nav-links-mobile" : "Nav-links"}>
-          <Link onClick={close} className="bro" to={"/"}>
+          <Link className="bro" to={"/"}>
             Home
           </Link>
-          <Link onClick={close} className="bro" to={"/Recent"}>
+          <Link className="bro" to={"/Recent"}>
             Recent recipe
           </Link>
-          <Link onClick={close} className="bro" to={"/AddRecipe"}>
-            Add recipe
-          </Link>
-          <Link onClick={close} className="bro" to={"/Blog"}>
+          {data.isLoggedin ? (
+            <Link className="bro" to={"/AddRecipe"}>
+              Add recipe
+            </Link>
+          ) : (
+            ""
+          )}
+          <Link className="bro" to={"/Blog"}>
             Blog
           </Link>
-          <Link onClick={close} className="bro" to={"/ContactUs"}>
+          <Link className="bro" to={"/ContactUs"}>
             Contact Us
           </Link>
-          <Link onClick={close} className="bro" to={"/AboutUs"}>
+          <Link className="bro" to={"/AboutUs"}>
             About
           </Link>
         </div>
         <div className="conti">
           <div className="right-cont">
-            <Link className="bro-1" to={"/Search"}>
+            {/* <Link className="bro-1" to={"/Search"}>
               <IoMdSearch />
-            </Link>
-            <Link className="bro-1" to={"/signin"}>
-              Sigin
-            </Link>
+            </Link> */}
+
+            {welc.welcome ? (
+              <div className="user">
+                <img src={prof} alt="user" />
+                <span>Welcome user</span>
+              </div>
+            ) : (
+              <Link className="bro-1" to={"/signin"}>
+                Sigin
+              </Link>
+            )}
           </div>
           <div className="dddd">
             <a href="javascript:void(0)" className="dropdown">
