@@ -11,6 +11,7 @@ import eggs from "../assets/eggs.jpg";
 import salad from "../assets/salad.jpg";
 import pizza from "../assets/pizza.png";
 import { useState, useEffect } from "react";
+import { FaArrowDown } from "react-icons/fa";
 import { useNavigate } from "react-router-dom";
 import AOS from "aos";
 import "aos/dist/aos.css";
@@ -43,18 +44,18 @@ const Prime = () => {
     navigateTo(`/recipe-d/3`);
   };
 
-
+  useEffect(() => {
     AOS.init({
       offset: 200,
-      duration: 1000,
+      duration: 1500,
       easing: "ease-in-sine",
       startEvent: "load",
     });
-  
+  }, []);
 
   return (
     <div className="req">
-      <div className="intro"data-aos="fade">
+      <div className="intro" data-aos="fade">
         <div>
           <span className="acc">Get access to</span>
           <p className="acc">
@@ -87,7 +88,7 @@ const Prime = () => {
         </div>
       </div>
 
-      <div className="categ" data-aos="fade-right"  data-aos-once="true">
+      <div className="categ" data-aos="fade-right" data-aos-once="true">
         <div className="cate">
           <div className="img-c">
             <img className="cate-pic-fish" src={fish} alt="" />
@@ -133,7 +134,7 @@ const Prime = () => {
         </div>
       </div>
 
-      <div className="categ-r" data-aos="fade-right">
+      <div className="categ-r" data-aos="fade-right" data-aos-once="true">
         <div className="cate">
           <div className="img-c">
             <img className="cate-pic-fish" src={fish} alt="" />
@@ -180,44 +181,57 @@ const Prime = () => {
       </div>
 
       <div className="slidding-div">
-        <div className="cont">
-          <div className="first">
-            <div>
-              <span className="rated">Top Rated Recipes</span>
-              <span className="day"> of the day</span>
+        <div>
+          <div className="cont">
+            <div className="first">
+              <div>
+                <span className="rated">Top Rated Recipes</span>
+                <span className="day"> of the day</span>
+              </div>
+              <p className="text">
+                Sliding recipes are much more tasty as food than sliding images
+                :D
+              </p>
             </div>
-            <p className="text">
-              Sliding recipes are much more tasty as food than sliding images :D
-            </p>
-          </div>
-          <div className="sec" data-aos="fade-right"  data-aos-once="true">
-            {foods.map((food) => (
-              <div onClick={handleCLick} key={food} className="food">
-                <div className="food-d">
-                  <div className="ting">
-                    <p className="f-name">{food.Name}</p>
-                    <div className="spatu">
-                      {" "}
-                      <span className="spatula">
-                        <TbGrillSpatula />
-                        <TbGrillSpatula />
-                        <TbGrillSpatula />
-                        <TbGrillSpatula />
-                        <TbGrillSpatula className="fade" />
-                      </span>
+            <div className="sec" data-aos="fade-right" data-aos-once="true">
+              {foods.map((food) => (
+                <div onClick={handleCLick} key={food} className="food">
+                  <div className="food-d">
+                    <div className="ting">
+                      <p className="f-name">{food.Name}</p>
+                      <div className="spatu">
+                        {" "}
+                        <span className="spatula">
+                          <TbGrillSpatula />
+                          <TbGrillSpatula />
+                          <TbGrillSpatula />
+                          <TbGrillSpatula />
+                          <TbGrillSpatula className="fade" />
+                        </span>
+                      </div>
+                    </div>
+                    <div className="Auth">
+                      <p className="Author">{food.Author}</p>
                     </div>
                   </div>
-                  <div className="Auth">
-                    <p className="Author">{food.Author}</p>
+
+                  <div className="wrapper">
+                    <img className="food-img" src={food.image} alt="" />
                   </div>
                 </div>
-
-                <div className="wrapper">
-                  <img className="food-img" src={food.image} alt="" />
-                </div>
-              </div>
-            ))}
+              ))}
+            </div>
           </div>
+        </div>
+        <div className="view-more">
+          <span className="vw-cont">
+            view more <FaArrowDown />
+          </span>
+        </div>
+        <div className="view-more-r">
+          <span className="vw-cont">
+            view more <FaArrowDown />
+          </span>
         </div>
       </div>
     </div>
