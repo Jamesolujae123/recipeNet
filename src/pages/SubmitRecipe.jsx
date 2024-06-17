@@ -99,9 +99,6 @@ const AddRecipe = () => {
                 }}
               />
             </div>
-            <div className="">
-              <div className="ingr-container">{ReactHtmlParser(ingr)}</div>
-            </div>
           </div>
         </div>
 
@@ -115,11 +112,6 @@ const AddRecipe = () => {
                   handleP(e, editor);
                 }}
               />
-            </div>
-            <div>
-              <div className="bap">
-                <div className="ingr-container">{ReactHtmlParser(steps)}</div>
-              </div>
             </div>
           </div>
         </div>
