@@ -1,5 +1,6 @@
 .slidding-div {
   display: flex;
+  flex-direction: column;
   margin-top: 370px;
   width: 100%;
   background-color: #fafafa;
@@ -29,6 +30,34 @@
   font-size: 30px;
   font-style: normal;
   color: gray;
+}
+
+#hidden {
+  opacity: 0;
+  transition: all 1s;
+}
+
+#show {
+  opacity: 1;
+}
+
+.view-more {
+  display: flex;
+  justify-content: center;
+}
+
+.vw-cont {
+  background-color: white;
+  border-radius: 30px;
+  width: max-content;
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-size: 17px;
+  font-weight: 800px;
+  font-size: 20px;
+  padding-block: 10px;
+  padding-inline: 15px;
+  box-shadow: 0 20px 35px rgba(0, 0, 0, 0.1);
 }
 
 .day {
@@ -89,7 +118,7 @@
   flex-direction: column;
   gap: 20px;
   padding-left: 20px;
-  box-shadow: 4px 4px 4px 4px rgba(173, 171, 171, 0.226);
+  box-shadow: 0 20px 35px rgba(0, 0, 0, 0.1);
 }
 
 .ting {
@@ -252,7 +281,7 @@
   justify-content: center;
   position: absolute;
   left: 60px;
-  top: 510px;
+  top: 500px;
 }
 
 .catae-title {
@@ -328,11 +357,11 @@
     gap: 30px;
   }
 
-  .intro { 
+  .intro {
     background-image: url("../assets/Backg2.jpeg");
     background-size: cover;
     background-position: center center;
-    transform: translate3d(0,0 -1px) scale(2);
+    transform: translate3d(0, 0 -1px) scale(2);
     transform-style: preserve-3d;
   }
 
@@ -354,6 +383,10 @@
   }
   .f-g-highlight {
     font-size: 25px;
+  }
+
+  .view-more {
+    margin-left: 0px;
   }
 
   .f-g-cont {
@@ -393,16 +426,27 @@
   }
 
   .rated {
-    font-size: 25px
+    font-size: 25px;
   }
   .day {
-    font-size: 25px
+    font-size: 25px;
   }
-  
+
+  .view-more {
+    display: none;
+  }
+
+  .view-more-r {
+    padding-left: 96px;
+  }
 }
 
 @media screen and (min-width: 610px) {
   .categ-r {
+    display: none;
+  }
+
+  .view-more-r {
     display: none;
   }
 }
