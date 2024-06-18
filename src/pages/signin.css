@@ -108,7 +108,7 @@
   background: tomato;
   color: #fff;
   cursor: pointer;
-    align-self: center;
+  align-self: center;
 }
 
 .m:hover {
@@ -162,23 +162,19 @@
 
 @media screen and (max-width: 600px) {
   .wrappert {
-    width: 310px;
+    width: 360px;
   }
 
   .bacc input {
-    width: 240px;
+    width: 250px;
     margin-left: 10px;
-    align-self: center;
-  }
-
-  .bacc label {
-  padding-left: 13px;
   }
 
   .headd {
     font-size: 25px;
   }
- .s-bk {
+
+  .s-bk {
     background-image: url("../assets/mobilebg.jpg");
   }
 
@@ -194,5 +190,9 @@
     font-size: 14px;
     cursor: pointer;
     border: 2px solid #dfe9f5;
+  }
+
+  .icons {
+    justify-self: center;
   }
 }
