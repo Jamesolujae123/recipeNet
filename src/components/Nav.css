@@ -170,6 +170,20 @@
   font-size: 16px;
   font-style: normal;
 }
+.us {
+  color: black;
+  text-decoration: none;
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  font-size: 16px;
+  font-style: normal;
+}
+
+.us-cont {
+  display: flex;
+  flex-direction: column;
+}
+
 
 @media screen and (max-width: 600px) {
   .nav-cont {
