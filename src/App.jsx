@@ -14,15 +14,18 @@ import Search from "./pages/search";
 import Sigin from "./pages/sigin";
 import SignUp from "./pages/SignUp";
 import { useState, createContext, useContext } from "react";
-import { AppContext, Welcome } from "./AppContext";
+import { AppContext, Welcome, User } from "./AppContext";
 
 function App() {
   const [isLoggedin, setIsLoggedin] = useState(false);
   const [welcome, setWelcome] = useState(false);
+    const [user, setUser] = useState("");
+
 
   return (
     <AppContext.Provider value={{ isLoggedin, setIsLoggedin }}>
       <Welcome.Provider value={{ welcome, setWelcome }}>
+      <User.Provider value={{ user, setUser }}>
         <Nav />
         <Routes>
           <Route path="/" element={<Home />} />
@@ -37,6 +40,7 @@ function App() {
           <Route path="/recipe-d/:id" element={<Recipe />} />
         </Routes>
         <Footer />
+      </User.Provider>
       </Welcome.Provider>
     </AppContext.Provider>
   );
