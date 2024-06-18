@@ -1,14 +1,11 @@
-import { useState,  useContext } from "react";
+import { useState, useContext } from "react";
 import "./signin.css";
-import { useNavigate} from "react-router-dom";
-import {Toaster, toast } from "sonner";
-import "./signin.css"
-import { AppContext } from "../AppContext";
+import { useNavigate } from "react-router-dom";
+import { Toaster, toast } from "sonner";
+import "./signin.css";
+import { AppContext, User } from "../AppContext";
 import App from "../App";
 import { Welcome } from "../AppContext";
-
-
-
 
 const SignUp = () => {
   const [formValues, setFormValues] = useState({
@@ -27,7 +24,8 @@ const SignUp = () => {
   const data = useContext(AppContext);
 
   const welc = useContext(Welcome);
- 
+
+  const usr = useContext(User);
 
   const handleSubmit = (e) => {
     e.preventDefault();
@@ -42,16 +40,16 @@ const SignUp = () => {
         toast.success("Sign up successful!");
         setPending(false);
       }, 2000);
-    data.setIsLoggedin(true);
-    welc.setWelcome(true)
-      navigateTo("/")
+      data.setIsLoggedin(true);
+      welc.setWelcome(true);
+      navigateTo("/");
+      usr.setUser(formValues.Username);
     }
     // If there are errors
     else {
       console.log("Invalid inputs, please try again");
       toast("Invalid inputs, please try again");
       setPending(false);
-
     }
     console.log(formValues);
   };
@@ -84,7 +82,7 @@ const SignUp = () => {
     ) {
       errors.phoneNumber = "Please enter a valid phone number";
     }
-    if (!formValues.password || !formValues.password.length >=8) {
+    if (!formValues.password || !formValues.password.length >= 8) {
       errors.password = "Password should be atleast 8 characters";
     }
     if (
@@ -98,86 +96,87 @@ const SignUp = () => {
 
   return (
     <div className="skk">
-
       <div className="wrappert">
-      <form className="bacc" onSubmit={handleSubmit}>
-        <h2 className="headd">Create An Account</h2>
-        <div className="form-inputs">
-        <div className="vviv">
-            <label>Firtname</label>
-            <input
-              type="text"
-              name="firstname"
-              value={formValues.firstname}
-              onChange={handleChange}
-            />
-          </div>
-          <div className="vviv">
-            <label>Lastname</label>
-            <input
-              type="text"
-              name="lastname"
-              value={formValues.lastname}
-              onChange={handleChange}
-            />
+        <form className="bacc" onSubmit={handleSubmit}>
+          <h2 className="headd">Create An Account</h2>
+          <div className="form-inputs">
             <div className="vviv">
-            <label>Username</label>
-            <input
-              type="text"
-              name="Username"
-              value={formValues.Username}
-              onChange={handleChange}
-            />
-          </div>
-          {/* Email */}
-          <div className="vviv">
-            <label>Email</label>
-            <input
-              type="email"
-              name="email"
-              value={formValues.email}
-              onChange={handleChange}
-            />
-          </div>
-          
-          {/* Phone Number */}
-          <div className="vviv">
-            <label>Phone Number</label>
-            <input
-              type="tel"
-              name="phoneNumber"
-              value={formValues.phoneNumber}
-              onChange={handleChange}
-            />
-          </div>
-          {/* Password */}
-          <div className="vviv">
-            <label>Password</label>
-            <input
-              type="password"
-              name="password"
-              value={formValues.password}
-              onChange={handleChange}
-            />
-          </div>
-          {/* Confirm Password */}
-          <div className="vviv">
-            <label>Confirm Password</label>
-            <input
-              type="password"
-              name="confirmPassword"
-              value={formValues.confirmPassword}
-              onChange={handleChange}
-            />
-          </div>
-          <button className="m" disabled={pending}>{pending ? "signing up..." : 'Signup'}</button>
-        </div>
-        </div>
-</form>
+              <label>Firtname</label>
+              <input
+                type="text"
+                name="firstname"
+                value={formValues.firstname}
+                onChange={handleChange}
+              />
+            </div>
+            <div className="vviv">
+              <label>Lastname</label>
+              <input
+                type="text"
+                name="lastname"
+                value={formValues.lastname}
+                onChange={handleChange}
+              />
+              <div className="vviv">
+                <label>Username</label>
+                <input
+                  type="text"
+                  name="Username"
+                  value={formValues.Username}
+                  onChange={handleChange}
+                />
+              </div>
+              {/* Email */}
+              <div className="vviv">
+                <label>Email</label>
+                <input
+                  type="email"
+                  name="email"
+                  value={formValues.email}
+                  onChange={handleChange}
+                />
+              </div>
 
-<Toaster/>
+              {/* Phone Number */}
+              <div className="vviv">
+                <label>Phone Number</label>
+                <input
+                  type="tel"
+                  name="phoneNumber"
+                  value={formValues.phoneNumber}
+                  onChange={handleChange}
+                />
+              </div>
+              {/* Password */}
+              <div className="vviv">
+                <label>Password</label>
+                <input
+                  type="password"
+                  name="password"
+                  value={formValues.password}
+                  onChange={handleChange}
+                />
+              </div>
+              {/* Confirm Password */}
+              <div className="vviv">
+                <label>Confirm Password</label>
+                <input
+                  type="password"
+                  name="confirmPassword"
+                  value={formValues.confirmPassword}
+                  onChange={handleChange}
+                />
+              </div>
+              <button className="m" disabled={pending}>
+                {pending ? "signing up..." : "Signup"}
+              </button>
+            </div>
+          </div>
+        </form>
+
+        <Toaster />
       </div>
-         </div>
+    </div>
   );
 };
 
