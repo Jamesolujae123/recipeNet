@@ -13,7 +13,7 @@
 @keyframes fade-left {
   0% {
     opacity: 0;
-    transform: translateX(120px) scale(0.9);
+    transform: translateX(120px) scale(1);
   }
 
   100% {
