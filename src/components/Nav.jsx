@@ -8,7 +8,7 @@ import { IoMdSearch } from "react-icons/io";
 import { GiHamburgerMenu } from "react-icons/gi";
 import { IoCloseSharp } from "react-icons/io5";
 import { useContext } from "react";
-import { AppContext, Welcome } from "../AppContext";
+import { AppContext, Welcome, User } from "../AppContext";
 import prof from "../assets/Ellipse 38.png";
 
 const Nav = () => {
@@ -32,6 +32,8 @@ const Nav = () => {
 
   const data = useContext(AppContext);
   const welc = useContext(Welcome);
+  const usr = useContext(User);
+
 
   return (
     <div className="nav-cont">
@@ -80,9 +82,14 @@ const Nav = () => {
             </Link> */}
 
             {welc.welcome ? (
-              <div className="user">
-                <img src={prof} alt="user" />
-                <span>Welcome user</span>
+                <div className="user">
+                <div>
+                  <img src={prof} alt="user" />
+                </div>
+                <div className="us-cont">
+                  <span>Welcome </span>
+                  <span className="us">{usr.user}</span>
+                </div>
               </div>
             ) : (
               <Link className="bro-1" to={"/signin"}>
