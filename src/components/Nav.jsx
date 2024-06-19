@@ -93,7 +93,7 @@ const Nav = () => {
               </div>
             ) : (
               <Link className="bro-1" to={"/signin"}>
-                Sigin
+                Sign in
               </Link>
             )}
           </div>
